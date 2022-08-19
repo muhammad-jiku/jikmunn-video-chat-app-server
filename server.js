@@ -9,8 +9,8 @@ const PORT = process.env.PORT || 5000;
 const io = new Server(httpServer, {
   /* options */
   cors: {
-    // origin: '*',
-    // methods: ['GET', 'POST'],
+    origin: '*',
+    methods: ['GET', 'POST'],
   },
 });
 // const io = require('socket.io')(server, {
